@@ -4,7 +4,6 @@ import dotenv from 'dotenv'
 import { loadCommands } from '@/core/loader';
 
 dotenv.config()
-
 loadCommands()
 vuelnit()
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });

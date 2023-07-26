@@ -1,9 +1,9 @@
 import { SlashCommandBuilder } from 'discord.js'
-export default{
-    command: new SlashCommandBuilder()
-        .setName('原神')
-        .setdescription('啟動原神'),
-    action: async(ctx) => {
-        ctx.reply('啟動!')
-    }
+
+export const command = new SlashCommandBuilder()
+    .setName('原神')
+    .setDescription('啟動原神')
+
+export const action = async(ctx) => {
+    ctx.reply('啟動!')
 }
